@@ -73,6 +73,7 @@ html {
   color: #39020b;
 }
 
+/* 햄버거바(?) */
 .top-bar__icon_box {
   margin-right: 30px;
 }
@@ -82,8 +83,9 @@ html {
   font-size: 25px;
 }
 
+/* 섹션1 -- 메인영상 화면 */
 .section__main_video {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -93,6 +95,64 @@ html {
   background-color: rgba(71, 34, 28, 0.5);
 }
 
+/* 섹션2 -- 허쉬메뉴 소개?페이지 */
+hersheys-menu {
+}
+
+.hersheys-menu__banner {
+  /* margin-top: 50px; */
+  height: 230px;
+  width: 600px;
+  margin-top: 80px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.hersheys-menu__banner.on {
+  opacity: 1;
+}
+
+.hersheys-menu__banner > img {
+  display: block;
+  height: 100%;
+}
+
+.choco1 {
+  margin-top: 155px;
+  height: 45%;
+  width: 45%;
+  border-radius: 20px;
+  transform: translateX(-900px);
+  opacity: 0;
+  transition: transform 0.8s, opacity 3s;
+}
+
+.choco1.on {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+.hersheys-menu__items {
+  border: 1px solid gold;
+}
+
+.hersheys-menu__slide > .swiper > .swiper-wrapper > .swiper-slide {
+  border: 1px solid red;
+  width: 200px;
+  height: 150px;
+}
+
+.hersheys-menu__slide > .swiper > .swiper-wrapper > .swiper-slide img {
+  height: 100%;
+  display: block;
+}
+
+/* 반응형 시작 */
 @media (width < 768px) {
   .top-bar__nav {
     display: none;
