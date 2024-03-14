@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>허쉬코리아</title>
+
+    <!-- 공통 css 연결 -->
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 폰트어썸 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+
+    <!-- gasp 불러오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger트리거 불러오기 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script defer src="script/script.js"></script>
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="stylesheet" href="style/font.css" />
+  </head>
+  <body>
+    <div class="hershey_wrap">
+      <header class="top-bar mx-auto">
+        <div class="top-bar__con flex items-center">
+          <h1>
+            <a href="#" class="top-bar__logo">
+              <img src="images/HSlogo.png" alt="허쉬로고" />
+            </a>
+          </h1>
+          <nav class="top-bar__nav mx-auto">
+            <ul class="flex items-center h-full">
+              <li>
+                <a href="#">BRANDE</a>
+              </li>
+              <li>
+                <a href="#">STORE</a>
+              </li>
+              <li>
+                <a href="#">EVENT</a>
+              </li>
+              <li>
+                <a href="#">COLLABORATION</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top-bar__icon_box flex items-center h-full w-[50px]">
+            <a href="#">
+              <span>
+                <i class="fa-solid fa-bars top-bar__nav_icon"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section__head">
+          <video
+            autoplay
+            loop
+            muted
+            src="images/hersheyvideo.mp4"
+            class="section__main_video"
+          ></video>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

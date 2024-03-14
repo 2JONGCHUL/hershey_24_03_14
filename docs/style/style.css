@@ -1,0 +1,104 @@
+html {
+  background-color: #47221c;
+}
+
+.top-bar {
+  /*max-width: 1400px;*/
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.top-bar > .top-bar__con {
+  height: 100%;
+  width: 100%;
+}
+
+/* header 로고 */
+.top-bar > .top-bar__con > h1 {
+  height: 50px;
+  margin-left: 30px;
+}
+
+.top-bar .top-bar__logo > img {
+  display: block;
+  height: 100%;
+}
+
+/* header nav 메뉴 바 */
+.top-bar__nav {
+  height: 100%;
+  z-index: 2;
+}
+
+.top-bar__nav > ul {
+}
+
+.top-bar__nav > ul > li {
+  position: relative;
+}
+
+.top-bar__nav > ul > li > a {
+  display: block;
+  height: 100%;
+  margin: 0 40px;
+  padding: 35px 0;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  color: white;
+}
+
+.top-bar__nav > ul > li > a.hover {
+  color: #39020b;
+}
+
+.top-bar__nav > ul > li > a:hover {
+  color: #9b1d33;
+}
+
+.top-bar__nav > ul > li:hover::before {
+  content: "\f564";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 35px;
+  left: 17px;
+  color: #39020b;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+.top-bar__nav > ul > li:hover {
+  color: #39020b;
+}
+
+.top-bar__icon_box {
+  margin-right: 30px;
+}
+
+.top-bar__nav_icon {
+  color: black;
+  font-size: 25px;
+}
+
+.section__main_video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__main_video::before {
+  content: "";
+  background-color: rgba(71, 34, 28, 0.5);
+}
+
+@media (width < 768px) {
+  .top-bar__nav {
+    display: none;
+  }
+  .top-bar__icon_box {
+    width: 100% !important;
+    justify-content: end;
+  }
+}
